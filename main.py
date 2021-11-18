@@ -54,7 +54,7 @@ def retriveText2(img,textk):
     f=o1.retrive(img)
     f1=o5.decrypt(f,k)
     
-    file = codecs.open("SecreteData.txt","w")#,encoding="utf8")
+    file = open("SecreteData.txt","w",encoding="utf8")
     #print(f1)
     file.write(f1)
     file.close()
